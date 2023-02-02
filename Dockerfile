@@ -1,7 +1,7 @@
 FROM golang:1.9
 
 RUN mkdir /testwebhook
-WORKDIR /EaseSearch
+WORKDIR /testwebhook
 COPY . /testwebhook
 RUN go build main.go
 EXPOSE 9090
