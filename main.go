@@ -11,7 +11,7 @@ func main() {
 
 	http.HandleFunc("/hook", TestWebHook)
 
-	err := http.ListenAndServe(":9090", nil) //设置监听的端口
+	err := http.ListenAndServe(":8080", nil) //设置监听的端口
 	if err != nil {
 		log.Fatal("ListenAndServe: ", err)
 	}

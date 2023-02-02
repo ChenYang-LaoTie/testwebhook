@@ -4,6 +4,6 @@ RUN mkdir /testwebhook
 WORKDIR /testwebhook
 COPY . /testwebhook
 RUN go build main.go
-EXPOSE 9090
+EXPOSE 8080
 CMD ./main
 
